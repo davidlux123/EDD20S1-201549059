@@ -6,6 +6,7 @@ int main()
 {
 	int matrix[5][5];
 
+	//LLENO LA MATRIZ DE CEROS
 	for (int i = 0; i < 5; i++) {
 
 		for (int j = 0; j < 5; j++)
@@ -16,6 +17,7 @@ int main()
 		}
 	}
 
+	//ACA ES DONDE SUCEDE LA MAGIA
 	for (int i = 0; i < 5; i++) {
 
 		for (int j = 0; j < 5; j++) {
@@ -33,11 +35,11 @@ int main()
 
 				if (j == 0)
 				{
-					matrix[i][0] = 1;
+					matrix[i][j] = 1;
 				}
 				else if (j == 4)
 				{
-					matrix[i][4] = 1;
+					matrix[i][j] = 1;
 				}
 
 			}
@@ -47,6 +49,7 @@ int main()
 
 	}
 
+	//IMPRIMERO LA MATRIZ
 	for (int i = 0; i < 5; i++) {
 
 		for (int j = 0; j < 5; j++)
